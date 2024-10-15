@@ -203,3 +203,10 @@ img:hover{
     width: 50%;
     padding: 1%
 }
+
+.references ol{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+    margin: auto;
+    line-height: 200%;
+}
