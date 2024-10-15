@@ -1,0 +1,93 @@
+<!-- Your main page should go here -->
+<!doctype html>
+<html lang="en-ca">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animal Crossing</title>
+    <link rel="icon" href="./images/leaf_icon.png" type="./image/icon type" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./history.html">History</a></li>
+          <li><a href="./events.html">Events</a></li>
+          <li><a href="./attractions">Attractions</a></li>
+          <li><a href="./food">Meals</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./honesty.html">Honesty</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Visiting the World of Animal Crossing</h1>
+    <section>
+      <video id="new-horizons" autoplay loop muted>
+        <source
+          src="./Animal Crossing_ New Horizons Accolades Trailer - Nintendo Switch.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+
+      <audio id="5am" loop>
+        <source src="./5 AM - Animal Crossing_ New Horizons Soundtrack.mp3" type="audio/mpeg" />
+        Your browser does not support the audio tag.
+      </audio>
+
+      <div class="center">
+        <button id="pauseButton">Pause</button>
+      </div>
+      <script>
+        // Get the audio and video elements
+        const audio = document.getElementById('5am');
+        const video = document.getElementById('new-horizons');
+        const pauseButton = document.getElementById('pauseButton');
+
+        // Start playing the audio when the video starts
+        window.onload = function () {
+          audio.play();
+        };
+
+        // Pause or play the audio on button click
+        pauseButton.addEventListener('click', function () {
+          if (audio.paused) {
+            audio.play();
+            pauseButton.textContent = 'Pause';
+          } else {
+            audio.pause();
+            pauseButton.textContent = 'Play';
+          }
+        });
+      </script>
+    </section>
+    <section>
+      <h2>What is it?</h2>
+      <p>
+        Animal Crossing is an open-world life simulation game where players have the freedom to do
+        whatever they want. The game begins with the main character, a villager, living among
+        animals. The player can build relationships with these animals and interact with their
+        surroundings. Since the game has no set objectives, the main character is free to engage in
+        a variety of activities, such as designing their village, collecting items, socializing with
+        villagers, and paying off the loan on their house. This lack of specific goals gives the
+        player freedom to shape their own world as they please.
+      </p>
+      <p>
+        Having grown up with Animal Crossing, I find its world to be a peaceful escape from the
+        troubles of real life. The music, openness, and freedom provide a sense of relief allowing
+        players to build a village that expresses themselves without any stress. Interacting with
+        the villagers fosters connection, making it feel like you’re spending time with friends. You
+        can also visit other towns and interact with players worldwide. This can help inspire the
+        way one creates their world. Players can also sell items, earn money, travel to other
+        worlds, and interact with fellow players. Animal Crossing encourages creativity, letting one
+        shape their world without any pressure or expectations.
+      </p>
+    </section>
+  </body>
+  <footer>
+    <a href="#">Back to Top</a>
+    <p>&copy; 2024 Aleeza Ahmad. All rights Reserved.</p>
+  </footer>
+</html>
